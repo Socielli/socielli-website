@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://socielli.com/sitemap.xml
