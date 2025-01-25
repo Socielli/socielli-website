@@ -19,8 +19,19 @@ const config = {
   logo_url: "https://nebulix.unfolding.io/logo.svg",
   local_backend: true,
   backend: {
-    name: "test-repo",
-  },
+    name: 'github',
+        repo: 'Socielli/socielli-website', // Your GitHub repo path
+        branch: 'main', // or your primary branch name
+        base_url: 'https://api.github.com', // GitHub API endpoint
+        auth_type: 'oauth', // GitHub uses OAuth
+        commit_messages: {
+            create: 'Create {{collection}} "{{slug}}"',
+            update: 'Update {{collection}} "{{slug}}"',
+            delete: 'Delete {{collection}} "{{slug}}"',
+            uploadMedia: 'Upload "{{path}}"',
+            deleteMedia: 'Delete "{{path}}"'
+        }
+    },
   search: true,
   media_folder: "src/assets",
   public_folder: "/src/assets",
