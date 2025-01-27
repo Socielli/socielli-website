@@ -2,6 +2,8 @@
 import NavMobile from "@components/navigation/NavMobile.vue";
 import { Icon } from "astro-icon/components";
 
+import logoImage from '/src/assets/socielli-logo.png';
+
 import PageFind from "@components/common/PageFind.astro";
 import CartButton from "@components/shop/CartButton.vue";
 import ColorSwitch from "@components/common/ColorSwitch.vue";
@@ -22,7 +24,7 @@ const isActive = (href) => {
       href="/"
       aria-label={title}
       class="grid place-items-center py-3 text-primary"
-      ><Icon name="logo" class="h-6" /></a
+      ><img src="/src/assets/socielli-logo.png" alt="Logo" class="h-6" /></a
     >
     {
       menu && (

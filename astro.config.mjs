@@ -8,6 +8,8 @@ import tailwind from "@astrojs/tailwind";
 import rehypeExternalLinks from "rehype-external-links";
 import fauxRemarkEmbedder from "@remark-embedder/core";
 import fauxOembedTransformer from "@remark-embedder/transformer-oembed";
+import logoImage from '/src/assets/socielli-logo.png';
+
 
 const remarkEmbedder = fauxRemarkEmbedder.default;
 const oembedTransformer = fauxOembedTransformer.default;
@@ -23,7 +25,7 @@ const m2dxOptions = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://nebulix.unfolding.io",
+  site: "https://socielli.com",
   integrations: [
     icon(),
     mdx({}),

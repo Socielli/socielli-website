@@ -83,7 +83,7 @@ onMounted(() => {
   }
 
   /* CONTACT FORM */
-  const contactButtons = document.querySelectorAll("[href='#contact']");
+  const contactButtons = document.querySelectorAll("[href='#contact-form']");
   contactButtons.forEach((el) => {
     el.addEventListener("click", (e) => {
       e.preventDefault();
