@@ -60,7 +60,7 @@ export default async function(config) {
   return {
     dir: {
       input: 'src',
-      output: outDir,
+      output: '_site',
       data: './_data',
       includes: './_includes',
       layouts: './_layouts'
